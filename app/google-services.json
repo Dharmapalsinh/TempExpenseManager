@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "467387309584",
+    "project_id": "expensemanager-6fdfa",
+    "storage_bucket": "expensemanager-6fdfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467387309584:android:1695f7050bf2c5f705b495",
+        "android_client_info": {
+          "package_name": "com.dharmapal.expensemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467387309584-63b627aic4k0uj27v6tqfmglt4aj222p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dharmapal.expensemanager",
+            "certificate_hash": "5a37207765970a9c231b24cfbeae12e6ab5e3df5"
+          }
+        },
+        {
+          "client_id": "467387309584-ans3ksrecd7ia9mrd66v5piqga6nmq59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnhy6eXrGw2gtSkVOkwKsLmovWd_KAVIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467387309584-ans3ksrecd7ia9mrd66v5piqga6nmq59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

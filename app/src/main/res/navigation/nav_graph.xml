@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.dharmapal.expensemanager.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_monthYearPickerDialog3"
+            app:destination="@id/monthYearPickerDialog3" />
+        <argument
+            android:name="datearg"
+            app:argType="com.dharmapal.expensemanager.MonthYearPickerDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.dharmapal.expensemanager.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_datePickerFragment"
+            app:destination="@id/datePickerFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/monthYearPickerDialog3"
+        android:name="com.dharmapal.expensemanager.MonthYearPickerDialog"
+        android:label="MonthYearPickerDialog" >
+        <action
+            android:id="@+id/action_monthYearPickerDialog3_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_monthYearPickerDialog3_to_monthExpenseFragment"
+            app:destination="@id/monthExpenseFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/datePickerFragment"
+        android:name="com.dharmapal.expensemanager.DatePickerFragment"
+        android:label="fragment_date_picker"
+        tools:layout="@layout/fragment_date_picker" />
+    <fragment
+        android:id="@+id/monthExpenseFragment"
+        android:name="com.dharmapal.expensemanager.MonthExpenseFragment"
+        android:label="fragment_month_expense"
+        tools:layout="@layout/fragment_month_expense" >
+        <argument
+            android:name="month"
+            app:argType="com.dharmapal.expensemanager.MonthYearPickerDialog" />
+    </fragment>
+</navigation>
